@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Website</title>
+        <!-- Include the Tailwind CSS CDN link -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+    </head>
+    <body class="bg-gray-100 p-8">
+        <!-- Navigation Bar -->
+        <nav class="bg-slate-300 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-black text-xl font-bold">Fashon<span>Show</span></a>
+    
+                <!-- Navigation Links -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white bg-blue-800 rounded-full w-20 h-7 text-center">Home</a>
+                    <a href="#" class="text-white bg-blue-800 rounded-full w-20 h-7 text-center">Clients</a>
+                    <a href="{% url 'oders' %}" class="text-white bg-blue-800 rounded-full w-20 h-7 text-center">Oders</a>
+                    <a href="{% url 'Health'%}" class="text-white bg-blue-800 rounded-full w-20 h-7 text-center">Health</a>
+                    <a href="#" class="text-white bg-blue-800 rounded-full w-20 h-7 text-center">About</a>
+                    <a href="#" class="text-white bg-blue-800 rounded-full w-20 h-7 text-center">Contact</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Main Content Section -->
+        <div class=" bg-gray-100 p-8 flex items-center space-x-4 justify-center">
+        <div class="container mx-auto mb-80">
+            <h1 class="text-black font-bold mb-4">Choose The Clothes That Suit You</h1>
+            <p class="text-black">Welcome to our fashon show and <br> start select your favority clothes here <br><span>let go</span></p>
+        </div>
+        <!-- advertaise -->
+                <div class= "bg-no-repeat bg-cover h-[300px] w-[500px] relative" style="background-image: url('images/images.jpeg');">
+                    <div class="absolute bottom-0 px-4 py-3 bg-gray-500/50 w-full">
+                      <h1 class="text-white font-semibold text-4xl"> you are cute </h1>
+                      <p class="text-gray-200">
+                        Enjoy your Choose.
+                      </p>
+                    </div>
+                  </div>
+                  <div class= "bg-no-repeat bg-cover h-[300px] w-[500px] relative" style="background-image: url('images/images.jpeg');">
+                    <div class="absolute bottom-0 px-4 py-3 bg-gray-500/50 w-full">
+                      <h1 class="text-white font-semibold text-4xl"> you are cute </h1>
+                      <p class="text-gray-200">
+                        Enjoy your Choose.
+                      </p>
+                    </div>
+                  </div>
+                         <button class="px-4 py-2 bg-blue-800 rounded-md text-white shadow-md shadow-blue-400">Order Now </button>
+             </div>
+        <!-- Footer Section -->
+        <footer class="bg-slate-300 p-4 text-black p-4 h-15">
+            <div class="container mx-auto text-center mb-9 ">
+                <p>All rights reserved &copy; Fashonshow@gmail.org</p>
+            </div>
+        </footer>
+    </body>
+    </html>
